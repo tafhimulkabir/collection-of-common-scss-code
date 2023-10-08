@@ -1,1 +1,1 @@
-# collection-of-common-scss-code
+### Collection of common SCSS variable, function, mixin and module
