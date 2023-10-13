@@ -1,0 +1,45 @@
+// *-----------------------------------------------------------------
+// * Configuration SCSS
+// *
+// * This file Hold All the Default Configurations.
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Base Font Size
+// * Define default font size using pixel unit.
+// *-----------------------------------------------------------------
+$BASE_FONT_SIZE: 16;
+
+// *-----------------------------------------------------------------
+// * Media Query Breakpoints
+// * Define breakpoints for responsive design.
+// *-----------------------------------------------------------------
+$BREAKPOINTS: (
+    'xxs':  320,
+    'xs':   480,
+    'sm':   768,
+    'md':   1024,
+    'lg':   1280,
+    'xl':   1440,
+    'xxl':  1920,
+    'xxxl': 2560
+);
+
+// *-----------------------------------------------------------------
+// * Media Query Fist Breakpoints
+// * Define first breakpoint for modifying the media query.
+// *-----------------------------------------------------------------
+$FIRST_BREAKPOINT: 'xxs';
+
+// *-----------------------------------------------------------------
+// * Media Query Last Breakpoints
+// * Define last breakpoint for modifying the media query.
+// *-----------------------------------------------------------------
+$LAST_BREAKPOINT: 'xxxl';
+
+// *-----------------------------------------------------------------
+// * Media Query Type
+// * Define media query type modifying the media query 
+// * values (small to large `s2l` or large to small `l2s`).
+// *-----------------------------------------------------------------
+$MEDIA_QUERY_TYPE: 's2l';
