@@ -6,40 +6,53 @@
 
 // *-----------------------------------------------------------------
 // * Base Font Size
-// * Define default font size using pixel unit.
+// *
+// * This variable defines the default font size in pixels.
+// * It is used as a base unit for responsive typography.
 // *-----------------------------------------------------------------
 $BASE_FONT_SIZE: 16;
 
 // *-----------------------------------------------------------------
 // * Media Query Breakpoints
-// * Define breakpoints for responsive design.
+// *
+// * Define breakpoints for responsive design. These breakpoints
+// * are used to define different layouts and styles for various
+// * screen sizes.
 // *-----------------------------------------------------------------
 $BREAKPOINTS: (
-    'xxs':  320,
-    'xs':   480,
-    'sm':   768,
-    'md':   1024,
-    'lg':   1280,
-    'xl':   1440,
-    'xxl':  1920,
-    'xxxl': 2560
+    'xxs':  320px,
+    'xs':   480px,
+    'sm':   768px,
+    'md':   1024px,
+    'lg':   1280px,
+    'xl':   1440px,
+    'xxl':  1920px,
+    'xxxl': 2560px
 );
 
 // *-----------------------------------------------------------------
-// * Media Query Fist Breakpoints
-// * Define first breakpoint for modifying the media query.
+// * Media Query First Breakpoint
+// *
+// * This variable specifies the first breakpoint used for
+// * modifying the media queries. It defines the lower bound
+// * of the responsive design spectrum.
 // *-----------------------------------------------------------------
 $FIRST_BREAKPOINT: 'xxs';
 
 // *-----------------------------------------------------------------
-// * Media Query Last Breakpoints
-// * Define last breakpoint for modifying the media query.
+// * Media Query Last Breakpoint
+// *
+// * This variable specifies the last breakpoint used for
+// * modifying the media queries. It defines the upper bound
+// * of the responsive design spectrum.
 // *-----------------------------------------------------------------
 $LAST_BREAKPOINT: 'xxxl';
 
 // *-----------------------------------------------------------------
 // * Media Query Type
-// * Define media query type modifying the media query 
-// * values (small to large `s2l` or large to small `l2s`).
+// *
+// * This variable defines the type of media queries used for
+// * modifying values. Use 's2l' for small to large and 'l2s' for
+// * large to small media query transformations.
 // *-----------------------------------------------------------------
 $MEDIA_QUERY_TYPE: 's2l';
