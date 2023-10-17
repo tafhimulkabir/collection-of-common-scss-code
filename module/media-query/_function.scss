@@ -24,24 +24,14 @@
 // * @return (number) - The value of the previous breakpoint.
 // *-----------------------------------------------------------------
 @function get-previous-breakpoint($breakpoint, $breakpoint-config) {
-    // Get the keys of the breakpoint configuration map.
     $breakpoint-keys: map-keys($breakpoint-config);
-    
-    // Find the index of the current breakpoint in the keys.
     $index: index($breakpoint-keys, $breakpoint);
 
-    // Check if there is a previous breakpoint.
     @if $index > 1 {
-        // Retrieve the key of the previous breakpoint.
         $previous-key: nth($breakpoint-keys, $index - 1);
-        
-        // Return the value of the previous breakpoint.
         @return map-get($breakpoint-config, $previous-key);
     }
 
-    // If no previous breakpoint is found, issue a warning.
     @warn 'No previous breakpoint found for #{$breakpoint}.';
-    
-    // Return null to indicate the absence of a previous breakpoint.
     @return null;
 }
