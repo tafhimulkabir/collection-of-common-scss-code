@@ -1,0 +1,52 @@
+// *-----------------------------------------------------------------
+// *
+// * SCSS Media Query Variable
+// *
+// * @author      : Tafhimul Kabir
+// * @version     : 0.0.01
+// * @copyright   : Public Domain
+// * @date        : 2023/10/17
+// *
+// * @description : This SCSS function file serves as a utility for 
+// *                handling media queries. It contains configuration 
+// *                variables for responsive design. These variables 
+// *                are used to define breakpoints, media query types,
+// *                and the responsive design spectrum.
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Media Query Breakpoints
+// *
+// * Define breakpoints for responsive design. These breakpoints
+// * are used to define different layouts and styles for various
+// * screen sizes.
+// *-----------------------------------------------------------------
+$breakpoint-config: $BREAKPOINTS;
+
+// *-----------------------------------------------------------------
+// * Media Query Type
+// *
+// * This variable defines the type of media queries used for
+// * modifying values. Use 's2l' for small to large and 'l2s' for
+// * large to small media query transformations.
+// *-----------------------------------------------------------------
+$query-type-config: $MEDIA_QUERY_TYPE;
+
+// *-----------------------------------------------------------------
+// * Media Query First Breakpoint
+// *
+// * This variable specifies the first breakpoint used for
+// * modifying the media queries. It defines the lower bound
+// * of the responsive design spectrum.
+// *-----------------------------------------------------------------
+$first-breakpoint: $FIRST_BREAKPOINT;
+
+// *-----------------------------------------------------------------
+// * Media Query Last Breakpoint
+// *
+// * This variable specifies the last breakpoint used for
+// * modifying the media queries. It defines the upper bound
+// * of the responsive design spectrum.
+// *-----------------------------------------------------------------
+$last-breakpoint: $LAST_BREAKPOINT;

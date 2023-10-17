@@ -23,7 +23,7 @@
 // * @param $breakpoint-config (map) - Configuration map of breakpoints.
 // * @return (number) - The value of the previous breakpoint.
 // *-----------------------------------------------------------------
-@function get-previous-breakpoint($breakpoint, $breakpoint-config) {
+@function get-previous-breakpoint($breakpoint) {
     $breakpoint-keys: map-keys($breakpoint-config);
     $index: index($breakpoint-keys, $breakpoint);
 
