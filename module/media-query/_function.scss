@@ -1,0 +1,47 @@
+// *-----------------------------------------------------------------
+// *
+// * SCSS Media Query Function
+// *
+// * @author      : Tafhimul Kabir
+// * @version     : 0.0.01
+// * @copyright   : Public Domain
+// * @date        : 2023/10/17
+// *
+// * @description : This SCSS function file serves as a utility for 
+// *                handling media queries. It contains various 
+// *                helper functions.
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Find Previous Breakpoint
+// *
+// * This function retrieves the previous breakpoint value based on 
+// * the current breakpoint.
+// *
+// * @param $breakpoint (string) - The current breakpoint identifier.
+// * @param $breakpoint-config (map) - Configuration map of breakpoints.
+// * @return (number) - The value of the previous breakpoint.
+// *-----------------------------------------------------------------
+@function get-previous-breakpoint($breakpoint, $breakpoint-config) {
+    // Get the keys of the breakpoint configuration map.
+    $breakpoint-keys: map-keys($breakpoint-config);
+    
+    // Find the index of the current breakpoint in the keys.
+    $index: index($breakpoint-keys, $breakpoint);
+
+    // Check if there is a previous breakpoint.
+    @if $index > 1 {
+        // Retrieve the key of the previous breakpoint.
+        $previous-key: nth($breakpoint-keys, $index - 1);
+        
+        // Return the value of the previous breakpoint.
+        @return map-get($breakpoint-config, $previous-key);
+    }
+
+    // If no previous breakpoint is found, issue a warning.
+    @warn 'No previous breakpoint found for #{$breakpoint}.';
+    
+    // Return null to indicate the absence of a previous breakpoint.
+    @return null;
+}
