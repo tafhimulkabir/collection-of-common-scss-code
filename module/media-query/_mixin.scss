@@ -1,0 +1,103 @@
+// *-----------------------------------------------------------------
+// * SCSS Media Query Mixins
+// *
+// * Author     : Tafhimul Kabir
+// * Version    : 0.0.01
+// * License    : Public Domain
+// * Date       : 2023/10/18
+// *
+// * Description: This SCSS file holds a collection of mixins for creating
+// *              responsive web layouts.
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Max and Min Media Query Mixin
+// *
+// * Generate Max and Min Media Queries with a mixin and return a media
+// * query with Min-width and Max-width conditions for each breakpoint.
+// *
+// * @param $breakpoint (string) - The current breakpoint identifier.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq($breakpoint, $media-screen: all) {
+    @media #{generate-media-range($breakpoint, 'both', $media-screen)} {
+        @content;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Max Media Query Mixin
+// *
+// * Generate Max Media Queries with a mixin and return a media query
+// * with Max-width conditions for each breakpoint.
+// *
+// * @param $breakpoint (string) - The current breakpoint identifier.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq-max($breakpoint, $media-screen: all) {
+    @media #{generate-media-range($breakpoint, 'max', $media-screen)} {
+        @content;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Min Media Query Mixin
+// *
+// * Generate Min Media Queries with a mixin and return a media query
+// * with Min-width conditions for each breakpoint.
+// *
+// * @param $breakpoint (string) - The current breakpoint identifier.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq-min($breakpoint, $media-screen: all) {
+    @media #{generate-media-range($breakpoint, 'min', $media-screen)} {
+        @content;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Custom Max and Min Media Query Mixin
+// *
+// * Generate Custom Max and Min Media Queries with a mixin and return
+// * a media query with Max-width and Min-width conditions.
+// *
+// * @param $min-width (number) - Min-width of the media query.
+// * @param $max-width (number) - Max-width of the media query.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq-custom($min-width, $max-width, $media-screen: all) {
+    @media #{$media-screen} and (min-width: #{$min-width}px) and (max-width: #{$max-width}px) {
+        @content;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Custom Max Media Query Mixin
+// *
+// * Generate Custom Max Media Queries with a mixin and return a media
+// * query with Max-width conditions.
+// *
+// * @param $max-width (number) - Max-width of the media query.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq-custom-max($max-width, $media-screen: all) {
+    @media #{$media-screen} and (max-width: #{$max-width}px) {
+        @content;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Custom Min Media Query Mixin
+// *
+// * Generate Custom Min Media Queries with a mixin and return a media
+// * query with Min-width conditions.
+// *
+// * @param $min-width (number) - Min-width of the media query.
+// * @param $media-screen (string) - Screen type for the media query.
+// *-----------------------------------------------------------------
+@mixin mq-custom-min($min-width, $media-screen: all) {
+    @media #{$media-screen} and (min-width: #{$min-width}px) {
+        @content;
+    }
+}
