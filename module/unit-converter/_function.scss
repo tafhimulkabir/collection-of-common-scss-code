@@ -1,0 +1,172 @@
+// *-----------------------------------------------------------------
+// * SCSS Unit Conversion Functions
+// *
+// * Author     : Tafhimul Kabir
+// * Version    : 0.0.01
+// * License    : Public Domain
+// * Date       : 2023/10/18
+// *
+// * Description: This SCSS file provides utility functions for
+// * converting CSS units (px, rem, em).
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Validate PX Value
+// *
+// * This function validates the value and outputs a rem value.
+// *
+// * @param $value (mixed) - The pixel value to be validated.
+// * @return (mixed) - The converted rem value or 'auto' if valid, or null if invalid.
+// *-----------------------------------------------------------------
+@function validate-px($value) {
+    @if type-of($value) == 'number' {
+        @return ($value / $default-font-size) * 1rem;
+    } @else if $value == auto {
+        // Return 'auto' if the value is 'auto'
+        @return auto;
+    } @else {
+        // Error if the value is not a valid number or 'auto'
+        @error "Value #{$value} is not a valid number or 'auto'.";
+        @return null;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Validate REM Value
+// *
+// * This function validates the value and outputs a px value.
+// *
+// * @param $value (mixed) - The rem value to be validated.
+// * @return (mixed) - The converted px value or 'auto' if valid, or null if invalid.
+// *-----------------------------------------------------------------
+@function validate-rem($value) {
+    @if type-of($value) == 'number' {
+        @return $value * $default-font-size + 0px;
+    } @else if $value == auto {
+        // Return 'auto' if the value is 'auto'
+        @return auto;
+    } @else {
+        // Error if the value is not a valid number or 'auto'
+        @error "Value #{$value} is not a valid number or 'auto'.";
+        @return null;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Validate PX to EM Value
+// *
+// * This function validates the value and outputs an em value.
+// *
+// * @param $value (mixed) - The pixel value to be validated.
+// * @return (mixed) - The converted em value or 'auto' if valid, or null if invalid.
+// *-----------------------------------------------------------------
+@function validate-px2em($value) {
+    @if type-of($value) == 'number' {
+        @return ($value / $default-font-size) * 1em;
+    } @else if $value == auto {
+        // Return 'auto' if the value is 'auto'
+        @return auto;
+    } @else {
+        // Error if the value is not a valid number or 'auto'
+        @error "Value #{$value} is not a valid number or 'auto'.";
+        @return null;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Validate EM to PX Value
+// *
+// * This function validates the value and outputs a px value.
+// *
+// * @param $value (mixed) - The em value to be validated.
+// * @return (mixed) - The converted px value or 'auto' if valid, or null if invalid.
+// *-----------------------------------------------------------------
+@function validate-em2px($value) {
+    @if type-of($value) == 'number' {
+        @return $value * $default-font-size + 0px;
+    } @else if $value == auto {
+        // Return 'auto' if the value is 'auto'
+        @return auto;
+    } @else {
+        // Error if the value is not a valid number or 'auto'
+        @error "Value #{$value} is not a valid number or 'auto'.";
+        @return null;
+    }
+}
+
+// *-----------------------------------------------------------------
+// * Convert PX to REM
+// *
+// * This function converts pixels (px) to rems.
+// *
+// * @param $values... (mixed) - The pixel values to be converted.
+// * @return (number) - The converted rem values.
+// *-----------------------------------------------------------------
+@function px2rem($values...) {
+    $result: ();
+
+    @each $value in $values {
+        $rem: validate-px($value);
+        $result: append($result, $rem);
+    }
+
+    @return $result;
+}
+
+// *-----------------------------------------------------------------
+// * Convert REM to PX
+// *
+// * This function converts rems to pixels (px).
+// *
+// * @param $values... (mixed) - The rem values to be converted.
+// * @return (number) - The converted px values.
+// *-----------------------------------------------------------------
+@function rem2px($values...) {
+    $result: ();
+
+    @each $value in $values {
+        $px: validate-rem($value);
+        $result: append($result, $px);
+    }
+
+    @return $result;
+}
+
+// *-----------------------------------------------------------------
+// * Convert PX to EM
+// *
+// * This function converts pixels (px) to ems.
+// *
+// * @param $values... (mixed) - The pixel values to be converted.
+// * @return (number) - The converted em values.
+// *-----------------------------------------------------------------
+@function px2em($values...) {
+    $result: ();
+
+    @each $value in $values {
+        $em: validate-px2em($value);
+        $result: append($result, $em);
+    }
+
+    @return $result;
+}
+
+// *-----------------------------------------------------------------
+// * Convert EM to PX
+// *
+// * This function converts ems to pixels (px).
+// *
+// * @param $values... (mixed) - The em values to be converted.
+// * @return (number) - The converted px values.
+// *-----------------------------------------------------------------
+@function em2px($values...) {
+    $result: ();
+
+    @each $value in $values {
+        $px: validate-em2px($value);
+        $result: append($result, $px);
+    }
+
+    @return $result;
+}

@@ -2,325 +2,325 @@
   width: 480;
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 319px) {
   .test__media__range__xs__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 321px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 479px) {
   .test__media__range__xxs__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 767px) {
   .test__media__range__sm__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .test__media__range__md__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1279px) {
   .test__media__range__lg__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1281px) and (max-width: 1440px) {
+@media all and (min-width: 1280px) and (max-width: 1439px) {
   .test__media__range__xl__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1441px) and (max-width: 1920px) {
+@media all and (min-width: 1440px) and (max-width: 1919px) {
   .test__media__range__xxl__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1921px) and (max-width: 2560px) {
+@media all and (min-width: 1920px) and (max-width: 2560px) {
   .test__media__range__xxxl__both__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 319px) {
   .test__media__range__xs__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 479px) {
   .test__media__range__xxs__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 767px) {
   .test__media__range__sm__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1023px) {
   .test__media__range__md__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1279px) {
   .test__media__range__lg__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1439px) {
   .test__media__range__xl__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1919px) {
   .test__media__range__xxl__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 2559px) {
   .test__media__range__xxxl__min__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 319px) {
   .test__media__range__xs__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 479px) {
   .test__media__range__xxs__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .test__media__range__sm__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .test__media__range__md__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .test__media__range__lg__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1439px) {
   .test__media__range__xl__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 1920px) {
+@media all and (max-width: 1919px) {
   .test__media__range__xxl__max__all {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 2560px) {
+@media all and (max-width: 2559px) {
   .test__media__range__xxxl__max__all {
     background-color: blueviolet;
   }
 }
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2559px) {
   .test__media__range__xxxl__max__screen {
     background-color: blueviolet;
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2559px) {
   .test__media__range__xxxl__min__screen {
     background-color: blueviolet;
   }
 }
 
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
   .test__media__range__xxxl__both__screen {
     background-color: blueviolet;
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 319px) {
   .test__mq__xxs__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 321px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 479px) {
   .test__mq__xs__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 480px) and (max-width: 767px) {
   .test__mq__sm__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   .test__mq__md__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1279px) {
   .test__mq__lg__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1281px) and (max-width: 1440px) {
+@media all and (min-width: 1280px) and (max-width: 1439px) {
   .test__mq__xl__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1441px) and (max-width: 1920px) {
+@media all and (min-width: 1440px) and (max-width: 1919px) {
   .test__mq__xxl__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1921px) and (max-width: 2560px) {
+@media all and (min-width: 1920px) and (max-width: 2560px) {
   .test__mq__xxxl__both__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 319px) {
   .test__mq__xxs__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 479px) {
   .test__mq__xs__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .test__mq__sm__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .test__mq__md__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1279px) {
   .test__mq__lg__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1439px) {
   .test__mq__xl__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 1920px) {
+@media all and (max-width: 1919px) {
   .test__mq__xxl__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (max-width: 2560px) {
+@media all and (max-width: 2559px) {
   .test__mq__xxxl__max__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 320px) {
+@media all and (min-width: 319px) {
   .test__mq__xxs__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 479px) {
   .test__mq__xs__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 767px) {
   .test__mq__sm__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1023px) {
   .test__mq__md__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1279px) {
   .test__mq__lg__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1439px) {
   .test__mq__xl__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1919px) {
   .test__mq__xxl__min__all {
     background-color: aquamarine;
   }
 }
 
-@media all and (min-width: 2560px) {
+@media all and (min-width: 2559px) {
   .test__mq__xxxl__min__all {
     background-color: aquamarine;
   }
 }
 
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
   .test__mq__xxxl__both__screen {
     background-color: aquamarine;
   }
 }
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2559px) {
   .test__mq__xxxl__max__screen {
     background-color: aquamarine;
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2559px) {
   .test__mq__xxxl__min__screen {
     background-color: aquamarine;
   }
@@ -360,4 +360,32 @@
   .test__mq__custom__max__both__screen {
     background-color: aquamarine;
   }
+}
+
+.test__convert__px__to__rem {
+  margin: 0.9375rem auto;
+  padding: 1.25rem 1.875rem;
+  width: 31.25rem;
+  font-size: 1.125rem;
+}
+
+.test__convert__px__to__em {
+  margin: 0.9375em auto;
+  padding: 1.25em 1.875em;
+  width: 31.25em;
+  font-size: 1.125em;
+}
+
+.test__convert__rem__to__px {
+  margin: 25.6px auto;
+  padding: 32px 48px;
+  width: 800px;
+  font-size: 28.8px;
+}
+
+.test__convert__em__to__px {
+  margin: 25.6px auto;
+  padding: 32px 48px;
+  width: 800px;
+  font-size: 28.8px;
 }

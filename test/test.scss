@@ -364,3 +364,31 @@
         background-color: aquamarine;
     }
 }
+
+.test__convert__px__to__rem {
+    margin: px2rem(15, auto);
+    padding: px2rem(20, 30);
+    width: px2rem(500);
+    font-size: px2rem(18);
+}
+
+.test__convert__px__to__em {
+    margin: px2em(15, auto);
+    padding: px2em(20, 30);
+    width: px2em(500);
+    font-size: px2em(18);
+}
+
+.test__convert__rem__to__px {
+    margin: rem2px(1.6, auto);
+    padding: rem2px(2, 3);
+    width: rem2px(50);
+    font-size: rem2px(1.8);
+}
+
+.test__convert__em__to__px {
+    margin: em2px(1.6, auto);
+    padding: em2px(2, 3);
+    width: em2px(50);
+    font-size: em2px(1.8);
+}
