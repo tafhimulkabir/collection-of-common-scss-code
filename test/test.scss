@@ -1,0 +1,196 @@
+// Import Loader.
+@import '../loader';
+
+// Test get-previous-breakpoint() function.
+.test__previous__breakpoint__value {
+    width: get-previous-breakpoint(sm);
+}
+
+// Test generate-media-range() function.
+.test__media__range__xs__both__all {
+    @media #{generate-media-range(xxs, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxs__both__all {
+    @media #{generate-media-range(xs, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__sm__both__all {
+    @media #{generate-media-range(sm, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__md__both__all {
+    @media #{generate-media-range(md, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__lg__both__all {
+    @media #{generate-media-range(lg, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xl__both__all {
+    @media #{generate-media-range(xl, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxl__both__all {
+    @media #{generate-media-range(xxl, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__both__all {
+    @media #{generate-media-range(xxxl, 'both', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xs__min__all {
+    @media #{generate-media-range(xxs, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxs__min__all {
+    @media #{generate-media-range(xs, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__sm__min__all {
+    @media #{generate-media-range(sm, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__md__min__all {
+    @media #{generate-media-range(md, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__lg__min__all {
+    @media #{generate-media-range(lg, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xl__min__all {
+    @media #{generate-media-range(xl, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxl__min__all {
+    @media #{generate-media-range(xxl, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__min__all {
+    @media #{generate-media-range(xxxl, 'min', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xs__max__all {
+    @media #{generate-media-range(xxs, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxs__max__all {
+    @media #{generate-media-range(xs, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__sm__max__all {
+    @media #{generate-media-range(sm, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__md__max__all {
+    @media #{generate-media-range(md, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__lg__max__all {
+    @media #{generate-media-range(lg, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xl__max__all {
+    @media #{generate-media-range(xl, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxl__max__all {
+    @media #{generate-media-range(xxl, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__max__all {
+    @media #{generate-media-range(xxxl, 'max', all)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__max__screen {
+    @media #{generate-media-range(xxxl, 'max', screen)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__min__screen {
+    @media #{generate-media-range(xxxl, 'min', screen)} {
+        background-color: blueviolet;
+    }
+}
+
+// Test generate-media-range() function.
+.test__media__range__xxxl__both__screen {
+    @media #{generate-media-range(xxxl, 'both', screen)} {
+        background-color: blueviolet;
+    }
+}

@@ -8,11 +8,11 @@
 // * @date        : 2023/10/14
 // *
 // * @description : This SCSS configuration file contains default settings
-// *                 and variables used in the project's stylesheets. It
-// *                 defines important values like the base font size, media
-// *                 query breakpoints, and other global settings. These
-// *                 settings help maintain consistency and facilitate
-// *                 responsive design.
+// *                and variables used in the project's stylesheets. It
+// *                defines important values like the base font size, media
+// *                query breakpoints, and other global settings. These
+// *                settings help maintain consistency and facilitate
+// *                responsive design.
 // *
 // *-----------------------------------------------------------------
 
@@ -33,14 +33,14 @@ $BASE_FONT_SIZE: 16;
 // * screen sizes.
 // *-----------------------------------------------------------------
 $BREAKPOINTS: (
-    'xxs':  320px,
-    'xs':   480px,
-    'sm':   768px,
-    'md':   1024px,
-    'lg':   1280px,
-    'xl':   1440px,
-    'xxl':  1920px,
-    'xxxl': 2560px
+    'xxs':  320,
+    'xs':   480,
+    'sm':   768,
+    'md':   1024,
+    'lg':   1280,
+    'xl':   1440,
+    'xxl':  1920,
+    'xxxl': 2560
 );
 
 // *-----------------------------------------------------------------
@@ -68,4 +68,4 @@ $LAST_BREAKPOINT: 'xxxl';
 // * modifying values. Use 's2l' for small to large and 'l2s' for
 // * large to small media query transformations.
 // *-----------------------------------------------------------------
-$MEDIA_QUERY_TYPE: 's2l';
+$MEDIA_QUERY_TYPE: 'l2s';

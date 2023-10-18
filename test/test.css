@@ -1,0 +1,165 @@
+.test__previous__breakpoint__value {
+  width: 480;
+}
+
+@media all and (max-width: 320px) {
+  .test__media__range__xs__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .test__media__range__xxs__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .test__media__range__sm__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .test__media__range__md__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1280px) {
+  .test__media__range__lg__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1281px) and (max-width: 1440px) {
+  .test__media__range__xl__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1441px) and (max-width: 1920px) {
+  .test__media__range__xxl__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1921px) and (max-width: 2560px) {
+  .test__media__range__xxxl__both__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 320px) {
+  .test__media__range__xs__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .test__media__range__xxs__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .test__media__range__sm__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .test__media__range__md__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .test__media__range__lg__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .test__media__range__xl__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .test__media__range__xxl__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .test__media__range__xxxl__min__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .test__media__range__xs__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .test__media__range__xxs__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .test__media__range__sm__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .test__media__range__md__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .test__media__range__lg__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .test__media__range__xl__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  .test__media__range__xxl__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media all and (max-width: 2560px) {
+  .test__media__range__xxxl__max__all {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 2560px) {
+  .test__media__range__xxxl__max__screen {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .test__media__range__xxxl__min__screen {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+  .test__media__range__xxxl__both__screen {
+    background-color: blueviolet;
+  }
+}

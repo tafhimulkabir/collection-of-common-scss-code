@@ -50,9 +50,8 @@
 // * conditions for each breakpoint based on the given parameters.
 // *-----------------------------------------------------------------
 @function generate-media-range($breakpoint, $media-type, $media-screen) {
-
     $max-width: map-get($breakpoint-config, $breakpoint);
-    $min-width: get-previous-breakpoint($breakpoint, $breakpoint-config);
+    $min-width: get-previous-breakpoint($breakpoint);
 
     @if $max-width == null {
         @warn "Breakpoint #{$breakpoint} does not exist.";
@@ -60,79 +59,44 @@
     }
 
     @if $media-type == 'both' {
-
         @if $query-type-config == 's2l' {
-
             @if $breakpoint == $first-breakpoint {
-
                 @return '#{$media-screen} and (max-width: #{($max-width - 1)}px)';
-
             } @else if $breakpoint == $last-breakpoint {
-
                 @return '#{$media-screen} and (min-width: #{$min-width}px) and (max-width: #{$max-width}px)';
-
             } @else {
-
                 @return '#{$media-screen} and (min-width: #{$min-width}px) and (max-width: #{($max-width - 1)}px)';
-
             }
-
-            @warn 'The breakpoint: #{$breakpoint} is not supported.';
-            @return null;
-
-        } @else if $query-type-config = 'l2s' {
-
+        } @else if $query-type-config == 'l2s' {
             @if $breakpoint == $first-breakpoint {
-
-                @return '#{$media-type} and (max-width: #{$max-width}px)';
-
+                @return '#{$media-screen} and (max-width: #{$max-width}px)';
             } @else {
-
                 @return '#{$media-screen} and (min-width: #{($min-width + 1)}px) and (max-width: #{$max-width}px)';
-
             }
-
-            @warn 'The breakpoint: #{$breakpoint} is not supported.';
+        } @else {
+            @warn 'The query type: #{$query-type-config} is not supported.';
             @return null;
-
         }
-
-        @warn 'The media query type: #{$query-type-config} is not supported.';
-        @return null;
-
     } @else if $media-type == 'max' {
-
         @if $query-type-config == 's2l' {
-
-            @return '#{$media-type} and (max-width: #{($max-width - 1)}px)';
-
-        } @else if $query-type-config = 'l2s' {
-
-            @return '#{$media-type} and (max-width: #{$max-width}px)';
-
+            @return '#{$media-screen} and (max-width: #{($max-width - 1)}px)';
+        } @else if $query-type-config == 'l2s' {
+            @return '#{$media-screen} and (max-width: #{$max-width}px)';
+        } @else {
+            @warn 'The query type: #{$query-type-config} is not supported.';
+            @return null;
         }
-
-        @warn 'The breakpoint: #{$breakpoint} is not supported.';
-        @return null;
-
-    } @else if  $media-type == 'min' {
-
+    } @else if $media-type == 'min' {
         @if $query-type-config == 's2l' {
-
-            @return '#{$media-type} and (min-width: #{($max-width - 1)}px)';
-
-        } @else if $query-type-config = 'l2s' {
-
-            @return '#{$media-type} and (min-width: #{$max-width}px)';
-            
+            @return '#{$media-screen} and (min-width: #{($max-width - 1)}px)';
+        } @else if $query-type-config == 'l2s' {
+            @return '#{$media-screen} and (min-width: #{$max-width}px)';
+        } @else {
+            @warn 'The query type: #{$query-type-config} is not supported.';
+            @return null;
         }
-
-        @warn 'The breakpoint: #{$breakpoint} is not supported.';
+    } @else {
+        @warn 'The media query type: #{$media-type} does not exist.';
         @return null;
-
     }
-
-    @warn 'The media query type: #{$media-type} does not exist.';
-    @return null;
-
 }
