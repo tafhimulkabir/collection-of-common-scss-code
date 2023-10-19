@@ -32,7 +32,7 @@
         @return map-get($breakpoint-config, $previous-key);
     }
 
-    @error 'No previous breakpoint found for #{$breakpoint}.';
+    @warn 'No previous breakpoint found for #{$breakpoint}.';
     @return null;
 }
 

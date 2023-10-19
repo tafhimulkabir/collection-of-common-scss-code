@@ -69,3 +69,15 @@ $LAST_BREAKPOINT: 'xxxl';
 // * large to small media query transformations.
 // *-----------------------------------------------------------------
 $MEDIA_QUERY_TYPE: 's2l';
+
+// *-----------------------------------------------------------------
+// * Font Icons
+// *
+// * This variable defines the configuration for Font Icon which include
+// * path, font name and prefix for loading icon.
+// *-----------------------------------------------------------------
+$FONT_ICONS: (
+    'path':     'font',
+    'font':     'icomoon',
+    'prefix':   'icon'
+);

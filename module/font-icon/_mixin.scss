@@ -1,0 +1,63 @@
+// *-----------------------------------------------------------------
+// * SCSS Font Icon Mixin
+// *
+// * @author      : Tafhimul Kabir
+// * @version     : 0.0.01
+// * @copyright   : Public Domain
+// * @date        : 2023/10/18
+// *
+// * @description : This SCSS file serves as a utility for 
+// *                loading font face and font rules.
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Load Icon Font
+// *
+// * This mixin loads an icon font by creating a font face and defining
+// * font rules for the specified icons.
+// *
+// * @param $icons (map) - A map of icon names and their corresponding codes.
+// * @param $config (map) - Configuration data containing the font path,
+// *   font family, and icon prefix.
+// *-----------------------------------------------------------------
+@mixin load-icon-font($icons, $config) {
+    $icon-path: map-get($config, 'path');
+    $font-family: map-get($config, 'font');
+    $icon-prefix: map-get($config, 'prefix');
+
+    // Define the font face for the icon font
+    @font-face {
+        font-family: '#{$font-family}';
+        src: url('#{$icon-path}/#{$font-family}.eot?eajehf');
+        src: url('#{$icon-path}/#{$font-family}.eot?eajehf#iefix') format('embedded-opentype'),
+             url('#{$icon-path}/#{$font-family}.ttf?eajehf') format('truetype'),
+             url('#{$icon-path}/#{$font-family}.woff?eajehf') format('woff'),
+             url('#{$icon-path}/#{$font-family}.svg?eajehf##{$font-family}') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+
+    // Define font rules for the icons
+    [class^="#{$icon-prefix}-"], [class*="#{$icon-prefix}-"] {
+        font-family: '#{$font-family}' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    // Generate CSS rules for each icon
+    @each $name, $code in $icons {
+        $output: unquote('\'#{$code}\'');
+
+        .#{$icon-prefix}-#{$name}:before {
+            content: $output;
+        }
+    }
+}

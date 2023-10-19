@@ -392,3 +392,33 @@
     width: em2px(50);
     font-size: em2px(1.8);
 }
+
+$FONTS: (
+    'eye-sharp': '\\e902',
+    'home': '\\e905',
+    'pencil-sharp': '\\e906',
+    'person': '\\e907',
+    'person-add': '\\e908',
+    'reader': '\\e90b',
+    'settings-sharp': '\\e90f',
+    'trash-sharp': '\\e90d',
+    'eye': '\\e90e',
+    'shopping-bag': '\\e912',
+    'library_books': '\\e913',
+    'dashboard': '\\e914',
+    'minimize': '\\e909',
+    'person_add_alt_1': '\\e915',
+    'clear': '\\e90a',
+    'dashboard1': '\\e917',
+    'shopping_bag1': '\\e918',
+    'maximize': '\\e90c',
+    'shopping-bag2': '\\e91b',
+    'user': '\\e91c',
+    'book2': '\\e91d',
+    'pencil1': '\\e911',
+    'notebook': '\\e929',
+    'book': '\\e923'
+);
+
+@include load-icon-font($FONTS, $FONT_ICONS);
+
