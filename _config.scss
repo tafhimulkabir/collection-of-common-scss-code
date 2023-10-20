@@ -81,3 +81,37 @@ $FONT_ICONS: (
     'font':     'icomoon',
     'prefix':   'icon'
 );
+
+// *-----------------------------------------------------------------
+// * Container Width
+// *
+// * This variable defines the configuration for container width with
+// * media query for responsive web layout.
+// *-----------------------------------------------------------------
+$CONTAINER_SIZE: (
+    sm: (
+        default:    1360,
+        sm:         (mq-type: max, width: 100%, padding: 0, 15),
+        md:         760,
+        lg:         940,
+        xl:         1060,
+        xxl:        1180,
+        xxxl:       1280
+    ),
+    md: (
+        default:    1780,
+        sm:         (mq-type: max, width: 100%, padding: 0, 15),
+        md:         760,
+        lg:         1020,
+        xl:         1180,
+        xxl:        1400,
+        xxxl:       1600
+    ),
+    lg: (
+        default:    2080,
+        lg:         (mq-type: max, width: 100%, padding: 0, 15),
+        xl:         1180,
+        xxl:        1400,
+        xxxl:       1600
+    ),
+);
