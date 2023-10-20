@@ -1,0 +1,70 @@
+// *-----------------------------------------------------------------
+// *
+// * SCSS Layout Container
+// *
+// * @author      : Tafhimul Kabir
+// * @version     : 0.0.01
+// * @copyright   : Public Domain
+// * @date        : 2023/10/20
+// *
+// * @description : This SCSS file contains placeholder fore generating 
+// *                responsive container.
+// *
+// *-----------------------------------------------------------------
+
+// *-----------------------------------------------------------------
+// * Container Fill
+// *
+// * This placeholder defines fluid container using percentage unit
+// * so It's fin in any screen size without  any media query.
+// *-----------------------------------------------------------------
+%container-fill {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+// *-----------------------------------------------------------------
+// * Generate Container
+// *
+// * This code generate container based on the configuration provided
+// * on the config file and handle responsive design.
+// *-----------------------------------------------------------------
+@each $breakpoints, $config in $container-config {
+    $default-width: map-get($config, default);
+
+    %container-#{$breakpoints} {
+        width: #{$default-width}px;
+
+        @if $breakpoints != 'default' {
+            @each $breakpoint, $width in $config {
+                @if type-of($width) == 'number' and $breakpoint != 'default' {
+                    @include mq($breakpoint) {
+                        width: $width;
+                    }
+                } @else if type-of($width) == 'map' and $breakpoint != 'default' {
+                    $md-type:       map-get($width, 'mq-type');
+                    $md-width:      map-get($width, 'width');
+                    $md-padding:    map-get($width, 'padding');
+
+                    @if $md-type == 'both' {
+                        @include mq($breakpoint) {
+                            width: $md-width;
+                            padding: px2em($md-padding);
+                        }
+                    } @else if $md-type == 'max' {
+                        @include mq-max($breakpoint) {
+                            width: $md-width;
+                            padding: px2em($md-padding);
+                        }
+                    } @else if $md-type == 'min' {
+                        @include mq-min($breakpoint) {
+                            width: $md-width;
+                            padding: px2em($md-padding);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -422,3 +422,15 @@ $FONTS: (
 
 @include load-icon-font($FONTS, $FONT_ICONS);
 
+
+.test__container__sm {
+    @extend %container-sm; // Extend the placeholder to apply its styles
+ }
+
+.test__container__md {
+    @extend %container-md; // Extend the placeholder to apply its styles
+ }
+
+.test__container__lg {
+    @extend %container-lg; // Extend the placeholder to apply its styles
+ }

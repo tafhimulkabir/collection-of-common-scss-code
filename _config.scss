@@ -83,15 +83,15 @@ $FONT_ICONS: (
 );
 
 // *-----------------------------------------------------------------
-// * Container Width
+// * Container Configuration
 // *
-// * This variable defines the configuration for container width with
-// * media query for responsive web layout.
+// * This variable defines the configuration for container width add
+// * other properties with media query for responsive web layout.
 // *-----------------------------------------------------------------
-$CONTAINER_SIZE: (
+$CONTAINER_CONFIG: (
     sm: (
         default:    1360,
-        sm:         (mq-type: max, width: 100%, padding: 0, 15),
+        sm:         (mq-type: max, width: 100%, padding: 15),
         md:         760,
         lg:         940,
         xl:         1060,
@@ -100,7 +100,7 @@ $CONTAINER_SIZE: (
     ),
     md: (
         default:    1780,
-        sm:         (mq-type: max, width: 100%, padding: 0, 15),
+        sm:         (mq-type: max, width: 100%, padding: 15),
         md:         760,
         lg:         1020,
         xl:         1180,
@@ -109,7 +109,7 @@ $CONTAINER_SIZE: (
     ),
     lg: (
         default:    2080,
-        lg:         (mq-type: max, width: 100%, padding: 0, 15),
+        lg:         (mq-type: max, width: 100%, padding: 15),
         xl:         1180,
         xxl:        1400,
         xxxl:       1600
