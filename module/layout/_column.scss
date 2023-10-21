@@ -17,7 +17,7 @@
 // *
 // * This mixin generate responsive column.
 // *-----------------------------------------------------------------
-@mixin generate-column($column-number, $column-gap, $align-items: null, $justify-items: null, $column-type: 'even', $breakpoints: null) {
+@mixin generate-column($column-number, $column-gap, $column-type, $align-items: null, $justify-items: null, $breakpoints: null) {
     display: grid;
     grid-template-columns: repeat(#{$column-number}, 1fr);
     gap: px2em($column-gap);

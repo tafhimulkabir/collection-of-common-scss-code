@@ -437,15 +437,15 @@ $FONTS: (
 
 
  .test__column__even {
-    @include generate-column(5, 15, null, null, 'even',  (
+    @include generate-column(5, 15, 'even', null, null,  (
         sm: (mq-type: 'min', col: 1, gap: 10),
         md: (mq-type: 'both', col: 3, gap: 12),
         lg: (mq-type: 'both', col: 4, gap: 14)
     ));    
 }
 
- .test__column__mixed {
-    @include generate-column(5, 15, null, null, 'mixed', (
+.test__column__mixed {
+    @include generate-column(5, 15, 'mixed', null, null, (
         sm: (mq-type: 'min', col: 2fr 5fr repeat(4, 1fr) 3fr, gap: 10),
         md: (mq-type: 'both', col: 1fr 3fr repeat(3, 1fr) 2fr, gap: 12),
         lg: (mq-type: 'both', col: 3fr 4fr 2fr, gap: 14)
