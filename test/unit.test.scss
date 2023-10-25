@@ -1,0 +1,14 @@
+@import '../loader';
+@import '../node_modules/sass-true/sass/true';
+
+@function add($a, $b) {
+    @return $a + $b;
+}
+
+@include describe("Math Functions") {
+    @include it("should add two numbers") {
+      $result: add(2, 3);
+      
+      @include assert-true($result == 5, "Expected the sum of 2 and 3 to be 5.");
+    }
+}

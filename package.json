@@ -1,0 +1,15 @@
+{
+  "name": "collection-of-common-scss-code",
+  "version": "0.0.1",
+  "description": "Collection of common SCSS variable, function, mixin,placeholder and module",
+  "scripts": {
+    "test": "npx sass test/unit.test.scss"
+  },
+  "keywords": [],
+  "author": "Tafhimul Kabir <tafhimulkabir@protonmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.4",
+    "sass-true": "^7.0.0"
+  }
+}
